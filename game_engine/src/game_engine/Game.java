@@ -17,8 +17,8 @@ public class Game extends Canvas implements Runnable {
 		JFrame jframe = new JFrame();
 		jframe.add(game);
 		jframe.setTitle("Game Engine");
-		jframe.setLocationRelativeTo(null);
 		jframe.pack();
+		jframe.setLocationRelativeTo(null);
 		jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		jframe.setVisible(true);
 		new Thread(game).start();
